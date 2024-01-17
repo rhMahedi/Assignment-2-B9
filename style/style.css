@@ -230,18 +230,20 @@ nav ul li a {
 /* ///////////////////////// */
 
 /* start chose section  */
-.main-image-section{
+.main-image-section {
   width: 1140px;
   min-height: 700px;
   margin: 0px auto;
 }
-.desti{
+
+.desti {
   color: #131318;
-text-align: center;
-font-size: 40px;
-font-weight: 800;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
 }
-.chose-pera{
+
+.chose-pera {
   color: rgba(19, 19, 24, 0.70);
   text-align: center;
   font-size: 16px;
@@ -249,21 +251,19 @@ font-weight: 800;
   line-height: 26px;
 }
 
-.img-head-container{
+.img-head-container {
   display: grid;
   gap: 50px;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 250px 250px 250px;
+  grid-template-columns: repeat(3, 1fr);
+
   justify-content: center;
   align-items: center;
-  
+
 }
-.saven-img-perant-one{
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.img-head-container{
-  
+
+.img-head-container img {
+  width: 470px;
+  height: 290px;
 }
 
 
@@ -271,7 +271,7 @@ font-weight: 800;
 
 /* start travel chose  */
 .main-chose-travel {
-  margin-top: 50px;
+  margin-top: 100px;
   width: 1140px;
   min-height: 500px;
   margin: 0px auto;
@@ -473,7 +473,7 @@ hr {
 /* start responsive design  */
 
 @media screen and (max-width: 600px) {
-  
+
   /* header part start  */
   header {
     padding: 20px;
@@ -524,9 +524,10 @@ hr {
     width: 255px;
     height: 52px;
   }
-/* ending header section  */
-/* ///////////////// */
-/* start main section ande popular section */
+
+  /* ending header section  */
+  /* ///////////////// */
+  /* start main section ande popular section */
   .popular {
     flex-direction: column;
     padding: 20px;
@@ -564,7 +565,89 @@ hr {
     height: 342px;
     margin-top: 15px;
   }
-/* start contact section  */
+
+  /* start chose section  */
+  .main-image-section {
+    padding: 20px;
+  }
+
+  .chose-pera {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .img-head-container {
+    flex-direction: column;
+  }
+
+  .saven-img-perant-one img {
+    width: 335px;
+    height: 175px;
+  }
+
+  .desti {
+    color: #131318;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  /* ending chose section  */
+  /* ////////////////////// */
+  /* start travel section  */
+  .main-chose-travel {
+    padding: 20px;
+  }
+
+  .chose-travel {
+    color: #131318;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .mile-ase {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .there-main-container {
+    flex-direction: column;
+  }
+
+  .there-perant {
+    width: 335px;
+    height: 289px;
+  }
+
+  .there-perant img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hotel {
+    color: #131318;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .hotel-mil {
+    width: 271px;
+    color: #5A5A5D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  /* start contact section  */
   .contact {
     flex-direction: column;
     padding: 20px;
@@ -640,7 +723,8 @@ hr {
     width: 100%;
     height: 100%;
   }
-/* start foter section  */
+
+  /* start foter section  */
   footer {
     width: 375px;
     height: 309px;
